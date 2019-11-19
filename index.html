@@ -4,55 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Day Planner</title>
   </head>
-  <header class="navhead">
-      <div id="logo">
-          
-      </div>
-      <!--<div class="topnav">
-          <a href="contact.html">Contact</a><a class="bar">|</a>
-          <a href="portfolio.html">Portfolio</a><a class="bar">|</a>
-          <a href="index.html">About</a>
-          
-      </div>-->
-      
-  </header>
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>Brad_J | Portfolio</title>
-      </head>
-      <header class="navhead">
-          <div id="logo">
-          </div>
-          <div class="topnav">
-              
-          </div>
-          
-      </header>
+  <header>
+    <div class="navbar navbar-absolute-top">
+      <h1 class="ptitle text-center">DAY PLANNER</h1>
+    </div>
+    
+  </header> 
       <body>
-       
-        <div class="contentabout">
-          <h1 class="ptitle">My Day Planner Application will go HERE.</h1>
+     
+      <div id="row1" class="row">
+        <div class="col-md-1 offset-md-1 time-slot">
+          <h3 class="shadow p-3 bg-info rounded" id="time-text">9:00am</h3>
         </div>
-        
-       
+        <div class="col-md-8 mp-1 bg-success day-slot">
+          <p id="day-text pl-2">Day Text</p>
+        </div>
+        <div class="col-md-1 mp-1 bg-warning save-slot">
+          <p id="save-text">Save</p>
+        </div>
+      </div>
       </body>
     
-     <footer>
-        <p id="copyright">Copyright © TwoPheat</p>
-     </footer>
+     <div class="navbar-fixed-bottom">
+        
+        <h4 id="copyright" class="text-center">Copyright © TwoPheat</h4>
+     </div>
     </div>
     </html>
     
