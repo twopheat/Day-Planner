@@ -6,114 +6,139 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="./assets/styles.css">
     <title>Day Planner</title>
   </head>
   <header>
     <div class="navbar navbar-absolute-top">
       <h1 class="ptitle text-center">DAY PLANNER</h1>
+      <div class="row">
+          <div class="col">
+            Dark Mode
+          </div>
+          <label class="switch col">
+            <input type="checkbox" id="theme-switcher">
+            <span class="slider round"></span>
+          </label>
+          <div class="col">
+            Light Mode
+          </div>
+        </div>
     </div>
     
   </header> 
       <body>
-     
-      <div id="row1" class="row">
-        <div class=" col-md-1 offset-md-1 time-slot bg-info shadow-sm p-3 mb-5">
-          <h3 class="border-right-0 rounded-left" id="time-text">9:00am</h3>
+
+      <div class="container dark">
+        <div class="card day">
+          <div class="card time-slot" id="date">
+              
+          </div>
         </div>
-        <div class="col-md-8 mp-1 bg-warning day-slot">
+      <div id="row1" class="card row">
+        <div class="btn col-md-1 time-slot bg-info p-3 mb-5 time-slot">
+          <h3 class="border-right-0 rounded-left" id="time-text1"></h3>
+        </div>
+        <div class="btn col-md-8 mp-1 bg-warning day-slot">
           <h3 id="day-text pl-2">Day Text</h3>
         </div>
-        <div class="col-md-1 mp-1 bg-success save-slot">
+        <div class="btn col-md-1 mp-1 bg-success save-slot">
           <h3 id="save-text">Save</h3>
         </div>
       </div>
       <div id="row2" class="row">
-          <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-            <h3 class="" id="time-text">9:00am</h3>
+          <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
+            <h3 class="" id="time-text2">9:00am</h3>
           </div>
-          <div class="col-md-8 mp-1 bg-warning day-slot">
+          <div class="btn col-md-8 mp-1 bg-warning day-slot">
             <h3 id="day-text pl-2">Day Text</h3>
           </div>
-          <div class="col-md-1 mp-1 bg-success save-slot">
+          <div class="btn col-md-1 mp-1 bg-success save-slot">
             <h3 id="save-text">Save</h3>
           </div>
         </div>
       <div id="row3" class="row">
-            <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-              <h3 class="" id="time-text">9:00am</h3>
+            <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot ">
+              <h3 class="" id="time-text3">9:00am</h3>
             </div>
-            <div class="col-md-8 mp-1 bg-warning day-slot">
+            <div class="btn col-md-8 mp-1 bg-warning day-slot">
               <h3 id="day-text pl-2">Day Text</h3>
             </div>
-            <div class="col-md-1 mp-1 bg-success save-slot">
+            <div class="btn col-md-1 mp-1 bg-success save-slot">
               <h3 id="save-text">Save</h3>
             </div>
       </div>
       <div id="row4" class="row">
-          <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-            <h3 class="" id="time-text">9:00am</h3>
+          <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
+            <h3 class="" id="time-text4">9:00am</h3>
           </div>
-          <div class="col-md-8 mp-1 bg-warning day-slot">
+          <div class="btn col-md-8 mp-1 bg-warning day-slot">
             <h3 id="day-text pl-2">Day Text</h3>
           </div>
-          <div class="col-md-1 mp-1 bg-success save-slot">
+          <div class="btn col-md-1 mp-1 bg-success save-slot">
             <h3 id="save-text">Save</h3>
           </div>
         </div>  
         <div id="row5" class="row">
-            <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-              <h3 class="" id="time-text">9:00am</h3>
+            <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
+              <h3 class="" id="time-text5">9:00am</h3>
             </div>
-            <div class="col-md-8 mp-1 bg-warning day-slot">
+            <div class="btn col-md-8 mp-1 bg-warning day-slot">
               <h3 id="day-text pl-2">Day Text</h3>
             </div>
-            <div class="col-md-1 mp-1 bg-success save-slot">
+            <div class="btn col-md-1 mp-1 bg-success save-slot">
               <h3 id="save-text">Save</h3>
             </div>
           </div>
           <div id="row6" class="row">
-              <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-                <h3 class="" id="time-text">9:00am</h3>
+              <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
+                <h3 class="" id="time-text6">9:00am</h3>
               </div>
-              <div class="col-md-8 mp-1 bg-warning day-slot">
+              <div class="btn col-md-8 mp-1 bg-warning day-slot">
                 <h3 id="day-text pl-2">Day Text</h3>
               </div>
-              <div class="col-md-1 mp-1 bg-success save-slot">
+              <div class="btn col-md-1 mp-1 bg-success save-slot">
                 <h3 id="save-text">Save</h3>
               </div>
             </div>
           <div id="row7" class="row">
-                <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-                  <h3 class="" id="time-text">9:00am</h3>
+                <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
+                  <h3 class="" id="time-text7">9:00am</h3>
                 </div>
-                <div class="col-md-8 mp-1 bg-warning day-slot">
+                <div class="btn col-md-8 mp-1 bg-warning day-slot">
                   <h3 id="day-text pl-2">Day Text</h3>
                 </div>
-                <div class="col-md-1 mp-1 bg-success save-slot">
+                <div class="btn col-md-1 mp-1 bg-success save-slot">
                   <h3 id="save-text">Save</h3>
                 </div>
           </div>
           <div id="row8" class="row">
-              <div class="col-md-1 offset-md-1 time-slot rounded bg-info shadow-sm p-3 mb-5">
-                <h3 class="" id="time-text">9:00am</h3>
+              <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
+                <h3 class="" id="time-text8">9:00am</h3>
               </div>
-              <div class="col-md-8 mp-1 bg-warning day-slot">
+              <div class="btn col-md-8 mp-1 bg-warning day-slot">
                 <h3 id="day-text pl-2">Day Text</h3>
               </div>
-              <div class="col-md-1 mp-1 bg-success save-slot">
+              <div class="btn col-md-1 mp-1 bg-success save-slot">
                 <h3 id="save-text">Save</h3>
               </div>
             </div> 
+          </div>
+
+
+          
+
+          <script src="./assets/script.js"></script>
       </body>
     
      <div class="navbar-fixed-bottom">
         
-        <h4 id="copyright" class="text-center">Copyright © TwoPheat</h4>
+        <h4 id="copyright" class="text-center">2019 © TwoPheat</h4>
      </div>
     </div>
     </html>
     
-   
+  </div>
   </body>
 
  <footer>
