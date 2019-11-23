@@ -101,6 +101,13 @@ $("#save9").on("click", function(save) {
   $("#data9").get(0).contentEditable = "true";
 
 });
+
+ 
+var currentDate = new Date();
+$("#timeDate").text(currentDate);
+
+
+
 //Below is experimental loop element creation hopefully
 /*buildElements();
 

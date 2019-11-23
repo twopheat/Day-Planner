@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon2.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Day Planner</title>
@@ -12,6 +12,7 @@
   <header>
     <div class="navbar navbar-absolute-top">
       <h1 class="ptitle text-center">DAY PLANNER</h1>
+      <h5 class="text-center" id="timeDate">date</h5>
         </div>
     </div>
     </header>
@@ -23,90 +24,90 @@
       
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time1" class="col-md-1 btn-info"> 9AM</button>
+         <button id="time1" class="border-left-0 time btn col-md-1 btn-light font-weight-bold"> 9AM</button>
          <form>
-         <input type="text" id="data1" class="data col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success save" id="save1" value="SAVE"></input>
+         <input type="text" id="data1" class="btn border-2 border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success save" id="save1" value="SAVE"></input>
         </form>
         </div>
         
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time2" class="col-md-1 btn-info">10AM</button>
+         <button id="time2" class="border-left-0 time btn col-md-1 btn-light font-weight-bold">10AM</button>
          <form>
-         <input type="text" id="data2" class="data col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success save" id="save2" value="SAVE"></input>
+         <input type="text" id="data2" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success save" id="save2" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time3" class="col-md-1 btn-info">11AM</button>
+         <button id="time3" class="border-left-0 time btn col-md-1 btn-light font-weight-bold">11AM</button>
          <form>
-         <input type="text" id="data3" class="data col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save3" value="SAVE"></input>
+         <input type="text" id="data3" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save3" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time4" class="col-md-1 btn-info">12PM</button>
+         <button id="time4" class="border-left-0 time btn col-md-1 btn-light font-weight-bold">12PM</button>
          <form>
-         <input type="text" id="data4" class="data4 col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save4" value="SAVE"></input>
+         <input type="text" id="data4" class="btn border border-dark data col-lg-7 btn-light"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save4" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time5" class="col-md-1 btn-info"> 1PM</button>
+         <button id="time5" class="border-left-0 time btn col-md-1 btn-light font-weight-bold"> 1PM</button>
          <form>
-         <input type="text" id="data5" class="data5 col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save5" value="SAVE"></input>
+         <input type="text" id="data5" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save5" value="SAVE"></input>
         </form>
         </div>
         
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time6" class="col-md-1 btn-info"> 2PM</button>
+         <button id="time6" class="border-left-0 time btn col-md-1 btn-light font-weight-bold"> 2PM</button>
          <form>
-         <input type="text" id="data6" class="data6 col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save6" value="SAVE"></input>
+         <input type="text" id="data6" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save6" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time7" class="col-md-1 btn-info"> 3PM</button>
+         <button id="time7" class="border-left-0 time btn col-md-1 btn-light font-weight-bold"> 3PM</button>
          <form>
-         <input type="text" id="data7" class="data col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save7" value="SAVE"></input>
+         <input type="text" id="data7" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save7" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time8" class="col-md-1 btn-info"> 4PM</button>
+         <button id="time8" class="border-left-0 time btn col-md-1 btn-light font-weight-bold"> 4PM</button>
          <form>
-         <input type="text" id="data8" class="data8 col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save8" value="SAVE"></input>
+         <input type="text" id="data8" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save8" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
         <p class="spacer"></p>
         <p class="col-lg-1"></p>
-         <button id="time9" class="col-md-1 btn-info"> 5PM</button>
+         <button id="time9" class="border-left-0 time btn col-md-1 btn-light font-weight-bold"> 5PM</button>
          <form>
-         <input type="text" id="data9" class="data9 col-lg-7 btn-light"></input>
-         <input type="submit" class="col-md-1 btn-success" id="save9" value="SAVE"></input>
+         <input type="text" id="data9" class="btn border border-dark data col-lg-7 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn col-md-1 btn-success" id="save9" value="SAVE"></input>
         </form>
         </div>
         
@@ -115,9 +116,8 @@
     </html>
     
   </div>
-
-  <!--Script Test Area-->
-
+  <!--Script Test Area
+<script src="./assets/moment.js"></script>-->
 <script src="./assets/script.js"></script>
   </body>
 
