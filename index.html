@@ -18,12 +18,13 @@
     <body>
       <div class="row">
          <p class="col-lg-1"></p>
-         <h1 id="hour1" class="col-lg-1 btn-info">9:00</h1>
+         <button id="hour1" class="col-md-1 btn-info">9:00</button>
          <form>
-         <input type="text" id="nineData" class="col-lg-7 btn-light"></input>
-         <button class="col-lg-1 btn-success" id="saveBtn"><h1>SAVE</h1></button>
+         <input type="text" id="dailyData" class="col-lg-7 btn-light"></input>
+         <input type="submit" class="col-md-1 btn-success" id="saveBtn" value="SAVE"></button>
         </form>
         </div>
+        
       </div>
          
       
@@ -35,21 +36,8 @@
   </div>
 
   <!--Script Test Area-->
-  <script>
-  var addData = $("#nineData").val().trim();
-  
-  var dataS;
 
-  function appendEl() {
-    var data = "<input></input>";
-  
-  $("data1").append(dataS);
-  
-  };
-
-appendEl();
-</script>
-<!-- <script src="./assets/script.js"></script> -->
+<script src="./assets/script.js"></script>
   </body>
 
  <footer>
