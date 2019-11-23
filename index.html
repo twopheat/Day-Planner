@@ -5,142 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Day Planner</title>
   </head>
   <header>
     <div class="navbar navbar-absolute-top">
       <h1 class="ptitle text-center">DAY PLANNER</h1>
-
         </div>
     </div>
-    
-  </header> 
-      <body>
-
-      <div class="container">
-        <div class="card day">
-          <div class="card time-slot" id="date">
-              
-          </div>
-        </div>
-      <div id="row1" class="card row">
-        <div class="btn col-md-1 time-slot bg-info p-3 mb-5 time-slot">
-          <h3 class="border-right-0 rounded-left" id="time-text1"></h3>
-        </div>
-        <div class="btn col-md-8 mp-1 bg-warning day-slot">
-          <h3 id="day-text pl-2">Day Text</h3>
-        </div>
-        <div class="btn col-md-1 mp-1 bg-success save-slot">
-          <h3 id="save-text">Save</h3>
+    </header>
+    <body>
+      <div class="row">
+         <p class="col-lg-1"></p>
+         <h1 id="hour1" class="col-lg-1 btn-info">9:00</h1>
+         <form>
+         <input type="text" id="nineData" class="col-lg-7 btn-light"></input>
+         <button class="col-lg-1 btn-success" id="saveBtn"><h1>SAVE</h1></button>
+        </form>
         </div>
       </div>
-      <div id="row2" class="row">
-          <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-            <h3 class="" id="time-text2">9:00am</h3>
-          </div>
-          <div class="btn col-md-8 mp-1 bg-warning day-slot">
-            <h3 id="day-text pl-2">Day Text</h3>
-          </div>
-          <div class="btn col-md-1 mp-1 bg-success save-slot">
-            <h3 id="save-text">Save</h3>
-          </div>
-        </div>
-      <div id="row3" class="row">
-            <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot ">
-              <h3 class="" id="time-text3">9:00am</h3>
-            </div>
-            <div class="btn col-md-8 mp-1 bg-warning day-slot">
-              <h3 id="day-text pl-2">Day Text</h3>
-            </div>
-            <div class="btn col-md-1 mp-1 bg-success save-slot">
-              <h3 id="save-text">Save</h3>
-            </div>
-      </div>
-      <div id="row4" class="row">
-          <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-            <h3 class="" id="time-text4">9:00am</h3>
-          </div>
-          <div class="btn col-md-8 mp-1 bg-warning day-slot">
-            <h3 id="day-text pl-2">Day Text</h3>
-          </div>
-          <div class="btn col-md-1 mp-1 bg-success save-slot">
-            <h3 id="save-text">Save</h3>
-          </div>
-        </div>  
-        <div id="row5" class="row">
-            <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-              <h3 class="" id="time-text5">9:00am</h3>
-            </div>
-            <div class="btn col-md-8 mp-1 bg-warning day-slot">
-              <h3 id="day-text pl-2">Day Text</h3>
-            </div>
-            <div class="btn col-md-1 mp-1 bg-success save-slot">
-              <h3 id="save-text">Save</h3>
-            </div>
-          </div>
-          <div id="row6" class="row">
-              <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-                <h3 class="" id="time-text6">9:00am</h3>
-              </div>
-              <div class="btn col-md-8 mp-1 bg-warning day-slot">
-                <h3 id="day-text pl-2">Day Text</h3>
-              </div>
-              <div class="btn col-md-1 mp-1 bg-success save-slot">
-                <h3 id="save-text">Save</h3>
-              </div>
-            </div>
-          <div id="row7" class="row">
-                <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-                  <h3 class="" id="time-text7">9:00am</h3>
-                </div>
-                <div class="btn col-md-8 mp-1 bg-warning day-slot">
-                  <h3 id="day-text pl-2">Day Text</h3>
-                </div>
-                <div class="btn col-md-1 mp-1 bg-success save-slot">
-                  <h3 id="save-text">Save</h3>
-                </div>
-          </div>
-          <div id="row8" class="row">
-              <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-                <h3 class="" id="time-text8">9:00am</h3>
-              </div>
-              <div class="btn col-md-8 mp-1 bg-warning day-slot">
-                <h3 id="day-text pl-2">Day Text</h3>
-              </div>
-              <div class="btn col-md-1 mp-1 bg-success save-slot">
-                <h3 id="save-text">Save</h3>
-              </div>
-            </div> 
-          
-          <div id="row9" class="row">
-              <div class="btn col-md-1 time-slot rounded bg-info p-3 mb-5 time-slot">
-                <h3 class="" id="time-text9">9:00am</h3>
-              </div>
-              <div class="btn col-md-8 mp-1 bg-warning day-slot">
-                <h3 id="day-text pl-2">Day Text</h3>
-              </div>
-              <div class="btn col-md-1 mp-1 bg-success save-slot">
-                <h3 id="save-text">Save</h3>
-              </div>
-            </div> 
-          </div>
-
-
-          
-
-          <script src="./assets/script.js"></script>
-      </body>
+         
+      
     
-     <div class="navbar-fixed-bottom">
-        
-        <h4 id="copyright" class="text-center">2019 © TwoPheat</h4>
-     </div>
+
     </div>
     </html>
     
   </div>
+
+  <!--Script Test Area-->
+  <script>
+  var addData = $("#nineData").val().trim();
+  
+  var dataS;
+
+  function appendEl() {
+    var data = "<input></input>";
+  
+  $("data1").append(dataS);
+  
+  };
+
+appendEl();
+</script>
+<!-- <script src="./assets/script.js"></script> -->
   </body>
 
  <footer>
