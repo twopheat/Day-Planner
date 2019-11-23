@@ -7,11 +7,11 @@ $("#saveBtn").on("click", function(save) {
   // This line grabs the input from the textbox
   var getData = $("#dailyData").val().trim();
 
-  // Adding data from the textbox to console log
+  // Adding data from the textbox to local storage
   localStorage.setItem('#dailyData', JSON.stringify(getData));
-  
+  $("#dailyData").get(0).contentEditable = "true";
 
-  // Calling renderButtons which handles the processing of our movie array
+  
   
 });
 });
