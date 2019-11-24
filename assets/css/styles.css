@@ -8,3 +8,10 @@
   border-right:1px dotted black;
   border-radius:0px 5px 5px 0px;
 }
+.container {
+  padding-left:10%;
+}
+body {
+  background-image: url(../assets/img/bkggold.png);
+  
+}

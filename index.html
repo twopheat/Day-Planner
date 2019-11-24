@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="favicon2.png">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon2.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Day Planner</title>
   </head>
   <header>
@@ -18,93 +18,89 @@
     </div>
     </header>
     <body>
+     <div class="container justify-content">
       <div class="row">
-       
- <!--       <form></form>
-      </div> -->
-      
         
-        <p class="col-sm-2"></p>
-         <div id="time1" class="text-right border border-top border-2 border-dark time btn-lg col-sm-1 font-weight-bold"> 9AM</div>
+         <div id="time1" class="text-right time col-sm-1 btn-lg font-weight-bold"> 9AM </div>
         <form>
          <input type="text" id="data1" class="btn-lg border-2 border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success save" id="save1" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success save" id="save1" value="SAVE"></input>
         </form>
         </div>
         
         <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time2" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold">10AM</div>
+        
+         <div id="time2" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold">10AM </div>
         <form>
          <input type="text" id="data2" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success save" id="save2" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success save" id="save2" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time3" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold">11AM</div>
+        
+         <div id="time3" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold">11AM </div>
         <form>
          <input type="text" id="data3" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save3" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save3" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time4" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold">12PM</div>
+        
+         <div id="time4" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold">12PM </div>
         <form>
          <input type="text" id="data4" class="btn-lg border border-dark data col-sm-6 btn-light"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save4" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save4" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time5" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 1PM</div>
+        
+         <div id="time5" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 1PM </div>
         <form>
          <input type="text" id="data5" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save5" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save5" value="SAVE"></input>
         </form>
         </div>
         
         <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time6" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 2PM</div>
+        
+         <div id="time6" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 2PM </div>
         <form>
          <input type="text" id="data6" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save6" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save6" value="SAVE"></input>
         </form>
         </div>
 
         <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time7" class="div text-right border-left-0 border-dark time btn-lg col-sm-1 btn-light font-weight-bold"> 3PM</div>
+        
+         <div id="time7" class="div text-right border-left-0 border-dark time btn-lg col-sm-1 btn-light font-weight-bold"> 3PM </div>
         <form>
          <input type="text" id="data7" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save7" value="SAVE"></input>
-        </form>
-        </div>
-
-        <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time8" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 4PM</div>
-        <form>
-         <input type="text" id="data8" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save8" value="SAVE"></input>
-        </form>
-        </div>
-
-        <div class="row">
-        <p class="col-sm-2"></p>
-         <div id="time9" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 5PM</div>
-        <form>
-         <input type="text" id="data9" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
-         <input type="submit" class="btn-lg col-sm-1 btn-success" id="save9" value="SAVE"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save7" value="SAVE"></input>
         </form>
         </div>
         
-      
+        <div class="row">
+        
+         <div id="time8" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 4PM </div>
+        <form>
+         <input type="text" id="data8" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save8" value="SAVE"></input>
+        </form>
+        </div>
+
+        <div class="row">
+        
+         <div id="time9" class="text-right border-left-0 time btn-lg col-sm-1 btn-light font-weight-bold"> 5PM </div>
+        <form>
+         <input type="text" id="data9" class="btn-lg border border-dark data col-sm-6 btn-light font-weight-bold"></input>
+         <input type="submit" class="btn-lg col-sm-2 btn-success" id="save9" value="SAVE"></input>
+        </form>
+        </div>
+        
+        </div>
       </body>
     </html>
     
@@ -113,30 +109,8 @@
 
 <script>
 
-  var today = moment().format("MMM Do YYYY");
-  var hour = moment().format("HH");
-  var now
-
-
-
-  function getNow() {
-    if (hour > 12){
-      now = (hour-12);
-    }
-    else {
-      now == hour;
-    };
-  }
-  getNow();
-
-
-
-  
-  document.getElementById("timeDate").innerHTML = today;
-  console.log(today);
-  console.log(now);
 </script>
-<script src="./assets/script.js"></script>
+<script src="./assets/js/script.js"></script>
   </body>
 
  <footer>
