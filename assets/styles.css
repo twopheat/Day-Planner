@@ -3,5 +3,8 @@
   text-align:left;
 }
 .time {
-  
+  border-top:1px dotted black;
+  border-bottom:1px dotted black;
+  border-right:1px dotted black;
+  border-radius:0px 5px 5px 0px;
 }

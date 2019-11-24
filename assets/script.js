@@ -11,8 +11,8 @@ $("#save1").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data1', JSON.stringify(getData));
   $("#data1").get(0).contentEditable = "true";
-
 });
+$('#data1').val(localStorage.getItem('#data1'));
 
 $("#save2").on("click", function(save) {
   save.preventDefault();
@@ -24,6 +24,7 @@ $("#save2").on("click", function(save) {
   $("#data2").get(0).contentEditable = "true";
 
 });
+$('#data2').val(localStorage.getItem('#data2'));
 
 $("#save3").on("click", function(save) {
   save.preventDefault();
@@ -35,6 +36,7 @@ $("#save3").on("click", function(save) {
   $("#data3").get(0).contentEditable = "true";
 
 });
+$('#data3').val(localStorage.getItem('#data3'));
 
 $("#save4").on("click", function(save) {
   save.preventDefault();
@@ -46,6 +48,7 @@ $("#save4").on("click", function(save) {
   $("#data4").get(0).contentEditable = "true";
 
 });
+$('#data4').val(localStorage.getItem('#data4'));
 
 $("#save5").on("click", function(save) {
   save.preventDefault();
@@ -57,6 +60,7 @@ $("#save5").on("click", function(save) {
   $("#data5").get(0).contentEditable = "true";
 
 });
+$('#data5').val(localStorage.getItem('#data5'));
 
 $("#save6").on("click", function(save) {
   save.preventDefault();
@@ -68,6 +72,7 @@ $("#save6").on("click", function(save) {
   $("#data6").get(0).contentEditable = "true";
 
 });
+$('#data6').val(localStorage.getItem('#data6'));
 
 $("#save7").on("click", function(save) {
   save.preventDefault();
@@ -79,6 +84,7 @@ $("#save7").on("click", function(save) {
   $("#data7").get(0).contentEditable = "true";
 
 });
+$('#data7').val(localStorage.getItem('#data7'));
 
 $("#save8").on("click", function(save) {
   save.preventDefault();
@@ -90,6 +96,7 @@ $("#save8").on("click", function(save) {
   $("#data8").get(0).contentEditable = "true";
 
 });
+$('#data8').val(localStorage.getItem('#data8'));
 
 $("#save9").on("click", function(save) {
   save.preventDefault();
@@ -101,12 +108,7 @@ $("#save9").on("click", function(save) {
   $("#data9").get(0).contentEditable = "true";
 
 });
-
- 
-var currentDate = new Date();
-$("#timeDate").text(currentDate);
-
-
+$('#data9').val(localStorage.getItem('#data9'));
 
 //Below is experimental loop element creation hopefully
 /*buildElements();
