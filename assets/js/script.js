@@ -20,6 +20,7 @@ function getNow() {
 }
 getNow();
 
+
 function dueDate() {
   if (aFter) {
     $("data").addClass("bg-dark");
@@ -28,10 +29,9 @@ function dueDate() {
     $("data").addClass("bg-success");
   }
   if (isNow) {
-    $("data").addClass("bg-dark");
+    $("data").addClass("bg-danger");
   }
   };
-
   
 
 // These functions operate the storage of the input/display fields
@@ -42,8 +42,8 @@ $("#save1").on("click", function(save) {
   var getData = $("#data1").val().trim();
   // Adding data from the data field to local storage
   localStorage.setItem('#data1', JSON.stringify(getData));
+  //make field editable
   $("#data1").get(0).contentEditable = "true";
-  
 });
 $('#data1').val(localStorage.getItem('#data1').replace(/"/g, ''));
 
@@ -56,6 +56,8 @@ $("#save2").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data2', JSON.stringify(getData));
   $("#data2").get(0).contentEditable = "true";
+
+  dueDate();
 });
 $('#data2').val(localStorage.getItem('#data2').replace(/"/g, ''));
 //----------------------------------------------------------
