@@ -1,5 +1,38 @@
 $(document).ready(function() {
 
+  //--------------------------------------------
+
+var now
+var today = moment().format("MMM Do YYYY");
+var hour = moment().format("HH");
+
+var aFter = moment().isAfter(now, "hour");
+var beFore = moment().isBefore(now, "hour");
+var isNow = moment().isSame(now, "hour");
+
+function getNow() {
+  if (hour > 12){
+    now = (hour-12);
+  }
+  else {
+    now == hour;
+  }
+}
+getNow();
+
+function dueDate() {
+  if (aFter) {
+    $("data").addClass("bg-dark");
+  }
+  if (beFore) {
+    $("data").addClass("bg-success");
+  }
+  if (isNow) {
+    $("data").addClass("bg-dark");
+  }
+  };
+
+  
 
 // These functions operate the storage of the input/display fields
 $("#save1").on("click", function(save) {
@@ -105,40 +138,6 @@ $('#data9').val(localStorage.getItem('#data9').replace(/"/g, ''));
 
 
 
-//--------------------------------------------
-
-
-var today = moment().format("MMM Do YYYY");
-var hour = moment().format("HH");
-var now = document.getElementById(time).value;
-var aFter = moment().isAfter(now, 'hour');
-var beFore = moment().isBefore(now, 'hour');
-var isNow = moment().isSame("HH");
-
-function getNow() {
-  if (hour > 12){
-    now = (hour-12);
-  }
-  else {
-    now == hour;
-  }
-}
-getNow();
-
-function dueDate() {
-  if (aFter) {
-    $("data").addClass("bg-dark");
-  }
-  if (beFore) {
-    $("data").addClass("bg-success");
-  }
-  if (isNow) {
-    $("data").addClass("bg-dark");
-  }
-  if (time < now) {
-    $("data").addClass("bg-danger");
-  }
-  };
 
 
 
