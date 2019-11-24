@@ -110,7 +110,7 @@ $('#data9').val(localStorage.getItem('#data9').replace(/"/g, ''));
 
 var today = moment().format("MMM Do YYYY");
 var hour = moment().format("HH");
-var now
+var now = document.getElementById(time).value;
 var aFter = moment().isAfter(now, 'hour');
 var beFore = moment().isBefore(now, 'hour');
 var isNow = moment().isSame("HH");
@@ -145,7 +145,9 @@ function dueDate() {
 document.getElementById("timeDate").innerHTML = today;
 console.log(today);
 console.log(now);
-console.log(time);
+console.log(aFter);
+console.log(beFore);
+console.log(isNow);
 
 
 
