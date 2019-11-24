@@ -6,9 +6,9 @@ var now
 var today = moment().format("MMM Do YYYY");
 var hour = moment().format("HH");
 
-var aFter = moment().isAfter(now, "hour");
-var beFore = moment().isBefore(now, "hour");
-var isNow = moment().isSame(now, "hour");
+//var aFter = moment().isAfter(now, "hour");
+//var beFore = moment().isBefore(now, "hour");
+//var isNow = moment().isSame(now, "hour");
 
 function getNow() {
   if (hour > 12){
@@ -21,7 +21,7 @@ function getNow() {
 getNow();
 
 
-function dueDate() {
+/*function dueDate() {
   if (aFter) {
     $("data").addClass("bg-dark");
   }
@@ -31,7 +31,7 @@ function dueDate() {
   if (isNow) {
     $("data").addClass("bg-danger");
   }
-  };
+  };*/
   
 
 // These functions operate the storage of the input/display fields
@@ -56,8 +56,6 @@ $("#save2").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data2', JSON.stringify(getData));
   $("#data2").get(0).contentEditable = "true";
-
-  dueDate();
 });
 $('#data2').val(localStorage.getItem('#data2').replace(/"/g, ''));
 //----------------------------------------------------------
@@ -83,6 +81,7 @@ $("#save4").on("click", function(save) {
 });
 $('#data4').val(localStorage.getItem('#data4').replace(/"/g, ''));
 //----------------------------------------------------------
+
 $("#save5").on("click", function(save) {
   save.preventDefault();
   
@@ -90,9 +89,11 @@ $("#save5").on("click", function(save) {
   var getData = $("#data5").val().trim();
   // Adding data from the data field to local storage
   localStorage.setItem('#data5', JSON.stringify(getData));
+  //make field editable
   $("#data5").get(0).contentEditable = "true";
 });
 $('#data5').val(localStorage.getItem('#data5').replace(/"/g, ''));
+
 //----------------------------------------------------------
 $("#save6").on("click", function(save) {
   save.preventDefault();
@@ -102,6 +103,7 @@ $("#save6").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data6', JSON.stringify(getData));
   $("#data6").get(0).contentEditable = "true";
+
 });
 $('#data6').val(localStorage.getItem('#data6').replace(/"/g, ''));
 //----------------------------------------------------------
@@ -126,7 +128,7 @@ $("#save8").on("click", function(save) {
   $("#data8").get(0).contentEditable = "true";
 });
 $('#data8').val(localStorage.getItem('#data8').replace(/"/g, ''));
-//----------------------------------------------------------
+//------------------------------------------------------------
 $("#save9").on("click", function(save) {
   save.preventDefault();
   
