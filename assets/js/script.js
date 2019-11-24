@@ -1,6 +1,5 @@
 $(document).ready(function() {
-// Declare array for time of day 
-//var timeFrame = [9,10,11,12,1,2,3,4,5,];
+
 
 // These functions operate the storage of the input/display fields
 $("#save1").on("click", function(save) {
@@ -11,10 +10,11 @@ $("#save1").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data1', JSON.stringify(getData));
   $("#data1").get(0).contentEditable = "true";
+  
 });
 $('#data1').val(localStorage.getItem('#data1').replace(/"/g, ''));
-moment('2010-10-20').isAfter(moment(), 'hour');
 
+//----------------------------------------------------------
 $("#save2").on("click", function(save) {
   save.preventDefault();
   
@@ -25,7 +25,7 @@ $("#save2").on("click", function(save) {
   $("#data2").get(0).contentEditable = "true";
 });
 $('#data2').val(localStorage.getItem('#data2').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save3").on("click", function(save) {
   save.preventDefault();
   
@@ -34,10 +34,9 @@ $("#save3").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data3', JSON.stringify(getData));
   $("#data3").get(0).contentEditable = "true";
-
 });
 $('#data3').val(localStorage.getItem('#data3').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save4").on("click", function(save) {
   save.preventDefault();
   
@@ -46,10 +45,9 @@ $("#save4").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data4', JSON.stringify(getData));
   $("#data4").get(0).contentEditable = "true";
-
 });
 $('#data4').val(localStorage.getItem('#data4').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save5").on("click", function(save) {
   save.preventDefault();
   
@@ -58,10 +56,9 @@ $("#save5").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data5', JSON.stringify(getData));
   $("#data5").get(0).contentEditable = "true";
-
 });
 $('#data5').val(localStorage.getItem('#data5').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save6").on("click", function(save) {
   save.preventDefault();
   
@@ -70,10 +67,9 @@ $("#save6").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data6', JSON.stringify(getData));
   $("#data6").get(0).contentEditable = "true";
-
 });
 $('#data6').val(localStorage.getItem('#data6').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save7").on("click", function(save) {
   save.preventDefault();
   
@@ -82,10 +78,9 @@ $("#save7").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data7', JSON.stringify(getData));
   $("#data7").get(0).contentEditable = "true";
-
 });
 $('#data7').val(localStorage.getItem('#data7').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save8").on("click", function(save) {
   save.preventDefault();
   
@@ -94,10 +89,9 @@ $("#save8").on("click", function(save) {
   // Adding data from the data field to local storage
   localStorage.setItem('#data8', JSON.stringify(getData));
   $("#data8").get(0).contentEditable = "true";
-
 });
 $('#data8').val(localStorage.getItem('#data8').replace(/"/g, ''));
-
+//----------------------------------------------------------
 $("#save9").on("click", function(save) {
   save.preventDefault();
   
@@ -117,8 +111,9 @@ $('#data9').val(localStorage.getItem('#data9').replace(/"/g, ''));
 var today = moment().format("MMM Do YYYY");
 var hour = moment().format("HH");
 var now
-
-
+var aFter = moment().isAfter(now, 'hour');
+var beFore = moment().isBefore(now, 'hour');
+var isNow = moment().isSame("HH");
 
 function getNow() {
   if (hour > 12){
@@ -126,20 +121,45 @@ function getNow() {
   }
   else {
     now == hour;
-  };
+  }
 }
 getNow();
 
+function dueDate() {
+  if (aFter) {
+    $("data").addClass("bg-dark");
+  }
+  if (beFore) {
+    $("data").addClass("bg-success");
+  }
+  if (isNow) {
+    $("data").addClass("bg-dark");
+  }
+  if (time < now) {
+    $("data").addClass("bg-danger");
+  }
+  };
 
 
 
 document.getElementById("timeDate").innerHTML = today;
 console.log(today);
 console.log(now);
+console.log(time);
 
-//Below is experimental loop element creation hopefully
+
+
+//Below is experimental loop element creation hopefully (and others)
 /*buildElements();
 
+function dueDate() {
+  if (time > now) {
+      $("data").addClass("bg-dark");
+  }
+  if (time < now) {
+      $("data").addClass("bg-light");
+  }
+};
 
 
 function buildElements() {
