@@ -6,9 +6,9 @@ var now
 var today = moment().format("MMM Do YYYY");
 var hour = moment().format("HH");
 
-//var aFter = moment().isAfter(now, "hour");
-//var beFore = moment().isBefore(now, "hour");
-//var isNow = moment().isSame(now, "hour");
+var aFter = moment().isAfter(now, "hour");
+var beFore = moment().isBefore(now, "hour");
+var isNow = moment().isSame(now, "hour");
 
 function getNow() {
   if (hour > 12){
